@@ -1,0 +1,19 @@
+{
+  "name": "typescriptgraph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ramda": "^0.26.38",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app.ts",
+    "prod": "tsc && node ./build/app.js"
+  },
+  "dependencies": {
+    "rambda": "^4.4.0"
+  }
+}
